@@ -1,56 +1,58 @@
 import { DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, UncontrolledDropdown } from "reactstrap"
 
+import styles from "./MainNavbar.module.css"
+
 function MainNavbar() {
   return (
     <Navbar expand={"md"}>
-      <NavbarBrand>Lovelady Baptist Church</NavbarBrand>
+      <NavbarBrand className={ styles.textColorLight }>Lovelady Baptist Church</NavbarBrand>
       <Nav navbar>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav caret>
+          <DropdownToggle className={ styles.textColorLight } nav caret>
             About
           </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem>Our Vision</DropdownItem>
-            <DropdownItem>What We Believe</DropdownItem>
-            <DropdownItem>Planning Your Visit</DropdownItem>
-            <DropdownItem>Service Times</DropdownItem>
-            <DropdownItem>Leadership</DropdownItem>
+          <DropdownMenu style={{ padding: "unset" }}>
+            <DropdownItem className={ styles.textColorLight }>Our Vision</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>What We Believe</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>Planning Your Visit</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>Service Times</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>Leadership</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav caret>
+          <DropdownToggle className={ styles.textColorLight } nav caret>
             Connect
           </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem>Prayer Requests</DropdownItem>
-            <DropdownItem>Watch Online</DropdownItem>
-            <DropdownItem>Contact Us</DropdownItem>
+          <DropdownMenu style={{ padding: "unset" }}>
+            <DropdownItem className={ styles.textColorLight }>Prayer Requests</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>Watch Online</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>Contact Us</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav caret>
+          <DropdownToggle className={ styles.textColorLight } nav caret>
             Resources
           </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem>Daily Journey</DropdownItem>
+          <DropdownMenu style={{ padding: "unset" }}>
+            <DropdownItem className={ styles.textColorLight }>Daily Journey</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav caret>
+          <DropdownToggle className={ styles.textColorLight } nav caret>
             Events
           </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem>Men&#39;s Activities</DropdownItem>
-            <DropdownItem>Women&#39;s Activities</DropdownItem>
-            <DropdownItem>Senior Adult Activities</DropdownItem>
+          <DropdownMenu style={{ padding: "unset" }}>
+            <DropdownItem className={ styles.textColorLight }>Men&#39;s Activities</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>Women&#39;s Activities</DropdownItem>
+            <DropdownItem className={ styles.textColorLight }>Senior Adult Activities</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle nav caret>
+          <DropdownToggle className={ styles.textColorLight } nav caret>
             Give
           </DropdownToggle>
-          <DropdownMenu>
-            <DropdownItem>Donate</DropdownItem>
+          <DropdownMenu style={{ padding: "unset" }}>
+            <DropdownItem className={ styles.textColorLight }>Donate</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
       </Nav>
