@@ -1,4 +1,5 @@
 import { DropdownItem, DropdownMenu, DropdownToggle, Nav, Navbar, NavbarBrand, UncontrolledDropdown } from "reactstrap"
+import { Link } from "react-router-dom";
 
 import styles from "./MainNavbar.module.css"
 
@@ -12,7 +13,7 @@ function MainNavbar() {
             About
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
-            <DropdownItem className={ styles.textColorLight }>Our Vision</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutVision" }>Our Vision</DropdownItem>
             <DropdownItem className={ styles.textColorLight }>What We Believe</DropdownItem>
             <DropdownItem className={ styles.textColorLight }>Planning Your Visit</DropdownItem>
             <DropdownItem className={ styles.textColorLight }>Service Times</DropdownItem>
