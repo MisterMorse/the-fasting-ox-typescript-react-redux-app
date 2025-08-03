@@ -14,10 +14,10 @@ function MainNavbar() {
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
             <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutVision" }>Our Vision</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>What We Believe</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>Planning Your Visit</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>Service Times</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>Leadership</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutBelieve" }>What We Believe</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutVisit" }>Planning Your Visit</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutTimes" }>Service Times</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutLeadership" }>Leadership</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
@@ -25,9 +25,9 @@ function MainNavbar() {
             Connect
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
-            <DropdownItem className={ styles.textColorLight }>Prayer Requests</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>Watch Online</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>Contact Us</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/connectRequests" }>Prayer Requests</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/connectOnline" }>Watch Online</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/connectUs"}>Contact Us</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
@@ -35,7 +35,7 @@ function MainNavbar() {
             Resources
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
-            <DropdownItem className={ styles.textColorLight }>Daily Journey</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/resourcesJourney" }>Daily Journey</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
@@ -43,9 +43,9 @@ function MainNavbar() {
             Events
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
-            <DropdownItem className={ styles.textColorLight }>Men&#39;s Activities</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>Women&#39;s Activities</DropdownItem>
-            <DropdownItem className={ styles.textColorLight }>Senior Adult Activities</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsMensActivities" }>Men&#39;s Activities</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsWomensActivities" }>Women&#39;s Activities</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsSeniorActivities" }>Senior Adult Activities</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
@@ -53,7 +53,7 @@ function MainNavbar() {
             Give
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
-            <DropdownItem className={ styles.textColorLight }>Donate</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/giveDonate" }>Donate</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
       </Nav>
