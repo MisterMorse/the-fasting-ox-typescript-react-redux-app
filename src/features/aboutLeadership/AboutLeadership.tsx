@@ -1,6 +1,6 @@
 function AboutLeadership() {
   return (
-    <div style={{display:'flex', flexDirection:'column'}}>
+    <div>
       <h3 style={{ padding: "25px", color: "#E05C42" }}>
         Our Vision
       </h3>
