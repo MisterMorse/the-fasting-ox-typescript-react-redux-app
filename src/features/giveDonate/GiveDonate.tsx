@@ -4,10 +4,15 @@ function GiveDonate() {
       <h3 style={{ padding: "25px", color: "#E05C42" }}>
         Donate
       </h3>
-      <div style={{ textAlign: "start" }}>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-      </div>
-    </div>
+      <div style={{display: "flex", flexDirection: "column", padding: "10px"}}>
+        <div style={{margin: "inherit", textAlign: "left"}}>
+
+          <p>By contributing to what Lovelady is doing in our community and around the world, we are using
+            what God has given us to share the good news of Jesus by serving others.</p>
+          <p>Tithing should be seen as an expression of Christian Grace.</p>
+          <p>You may mail donations to:</p><p>Lovelady Baptist Church</p>
+          <p>P. O. Box 1699</p><p>Ada, OK 74821-1699</p>
+        </div>    </div> </div>
   )
 }
 
