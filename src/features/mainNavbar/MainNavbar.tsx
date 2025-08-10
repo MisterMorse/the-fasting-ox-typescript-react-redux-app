@@ -13,7 +13,6 @@ function MainNavbar() {
             About
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
-            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutVision" }>Our Vision</DropdownItem>
             <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutBelieve" }>What We Believe</DropdownItem>
             <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutVisit" }>Planning Your Visit</DropdownItem>
             <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/aboutTimes" }>Service Times</DropdownItem>
