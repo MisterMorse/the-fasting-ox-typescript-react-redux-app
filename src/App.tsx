@@ -16,10 +16,9 @@ import AboutLeadership from "./features/aboutLeadership/AboutLeadership.tsx"
 import ConnectRequests from "./features/connectRequests/ConnectRequests.tsx"
 import ConnectOnline from "./features/connectOnline/ConnectOnline.tsx"
 import ConnectUs from "./features/connectUs/ConnectUs.tsx"
-import ResourcesJourney from "./features/resourcesJourney/ResourcesJourney.tsx"
 import EventsMensActivities from "./features/eventsMensActivities/EventsMensActivities.tsx"
 import EventsWomensActivities from "./features/eventsWomensActivities/EventsWomensActivities.tsx"
-import EventsSeniorActivities from "./features/eventsSeniorActivities/EventsSeniorActivities.tsx"
+import EventsWholeChurchActivities from "./features/eventsWholeChurchActivities/EventsWholeChurchActivities.tsx"
 import GiveDonate from "./features/giveDonate/GiveDonate.tsx"
 
 export const App = () => (
@@ -39,10 +38,9 @@ export const App = () => (
           <Route path="/connectRequests" element=<ConnectRequests/>/>
           <Route path="/connectOnline" element=<ConnectOnline/>/>
           <Route path="/connectUs" element=<ConnectUs/>/>
-          <Route path="/resourcesJourney" element=<ResourcesJourney/>/>
           <Route path="/eventsMensActivities" element=<EventsMensActivities/>/>
           <Route path="/eventsWomensActivities" element=<EventsWomensActivities/>/>
-          <Route path="/eventsSeniorActivities" element=<EventsSeniorActivities/>/>
+          <Route path="/eventsWholeChurchActivities" element=<EventsWholeChurchActivities/>/>
           <Route path="/giveDonate" element=<GiveDonate/>/>
         </Routes>
       </div>

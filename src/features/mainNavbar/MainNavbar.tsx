@@ -32,20 +32,12 @@ function MainNavbar() {
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
           <DropdownToggle className={ styles.textColorLight } nav caret>
-            Resources
-          </DropdownToggle>
-          <DropdownMenu style={{ padding: "unset" }}>
-            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/resourcesJourney" }>Daily Journey</DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
-        <UncontrolledDropdown nav inNavbar>
-          <DropdownToggle className={ styles.textColorLight } nav caret>
             Events
           </DropdownToggle>
           <DropdownMenu style={{ padding: "unset" }}>
             <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsMensActivities" }>Men&#39;s Activities</DropdownItem>
             <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsWomensActivities" }>Women&#39;s Activities</DropdownItem>
-            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsSeniorActivities" }>Senior Adult Activities</DropdownItem>
+            <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsWholeChurchActivities" }>Whole Church Activities</DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>
         <UncontrolledDropdown nav inNavbar>
