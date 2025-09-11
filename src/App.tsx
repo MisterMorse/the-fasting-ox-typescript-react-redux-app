@@ -7,7 +7,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 // import { Quotes } from "./features/quotes/Quotes"
 // import logo from "./logo.svg"
 
-import Header  from "./features/header/Header.tsx"
 import AboutVision from "./features/aboutVision/AboutVision.tsx"
 import AboutBelieve from "./features/aboutBelieve/AboutBelieve.tsx"
 import AboutVisit from "./features/aboutVisit/AboutVisit.tsx";
@@ -21,14 +20,15 @@ import EventsMensActivities from "./features/eventsMensActivities/EventsMensActi
 import EventsWomensActivities from "./features/eventsWomensActivities/EventsWomensActivities.tsx"
 import EventsSeniorActivities from "./features/eventsSeniorActivities/EventsSeniorActivities.tsx"
 import GiveDonate from "./features/giveDonate/GiveDonate.tsx"
+import HeaderMobile from "./features/headerMobile/HeaderMobile.tsx"
 
 export const App = () => (
   <div className="App">
     <BrowserRouter>
-      <Header></Header>
-      <h3 style={{ backgroundColor: "#E05C42", color: "#DDDDDD", padding: "30px" }}>
+      <HeaderMobile></HeaderMobile>
+      <h6 style={{ backgroundColor: "#E05C42", color: "#DDDDDD", padding: "12px" }}>
         Reaching out, sharing Christ
-      </h3>
+      </h6>
       <div style={{ padding: "1% 20%" }}>
         <Routes>
           <Route path="/aboutVision" element=<AboutVision/>/>
