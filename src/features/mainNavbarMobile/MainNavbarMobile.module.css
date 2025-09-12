@@ -22,3 +22,8 @@ nav {
     color: #DDDDDD;
     width: -webkit-fill-available;
 }
+
+.toggler {
+    color: #DDDDDD;
+    background-color: #E05C42;
+}

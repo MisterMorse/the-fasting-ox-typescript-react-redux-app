@@ -29,7 +29,7 @@ export const App = () => (
       <h6 style={{ backgroundColor: "#E05C42", color: "#DDDDDD", padding: "12px" }}>
         Reaching out, sharing Christ
       </h6>
-      <div style={{ padding: "1% 20%" }}>
+      <div style={{ padding: "1% 10%" }}>
         <Routes>
           <Route path="/aboutVision" element=<AboutVision/>/>
           <Route path="/aboutBelieve" element=<AboutBelieve/>/>
