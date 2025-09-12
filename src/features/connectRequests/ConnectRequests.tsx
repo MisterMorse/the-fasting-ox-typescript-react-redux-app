@@ -1,3 +1,5 @@
+import { DropdownItem, DropdownMenu, DropdownToggle } from "reactstrap"
+
 function ConnectRequests() {
   return (
     <div>
@@ -5,7 +7,38 @@ function ConnectRequests() {
         Prayer Requests
       </h3>
       <div style={{ textAlign: "start" }}>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        <DropdownToggle caret>
+          General
+        </DropdownToggle>
+        <DropdownMenu style={{ padding: "unset" }}>
+          <DropdownItem>Nathanial Adesanwo</DropdownItem>
+          <DropdownItem>Donita Anderson</DropdownItem>
+          <DropdownItem>Harold Anson</DropdownItem>
+          <DropdownItem>Ashlyn Black</DropdownItem>
+          <DropdownItem>Jace Blackwell</DropdownItem>
+        </DropdownMenu>
+        <DropdownToggle caret>
+          Missionaries
+        </DropdownToggle>
+        <DropdownMenu style={{ padding: "unset" }}>
+          <DropdownItem>Matthew Eppler</DropdownItem>
+          <DropdownItem>Inguana Gruznina Talsi School</DropdownItem>
+          <DropdownItem>Marcos & Maddie Souza</DropdownItem>
+          <DropdownItem>Todd & Tiffany Sanders</DropdownItem>
+        </DropdownMenu>
+        <DropdownToggle caret>
+          Military
+        </DropdownToggle>
+        <DropdownMenu style={{ padding: "unset" }}>
+          <DropdownItem>Clayton Deaton</DropdownItem>
+          <DropdownItem>Michae; Elizondo</DropdownItem>
+          <DropdownItem>Cody Bingham</DropdownItem>
+          <DropdownItem>Kade Streater</DropdownItem>
+          <DropdownItem>Gage Streater</DropdownItem>
+          <DropdownItem>Riley Gardner</DropdownItem>
+          <DropdownItem>David Wright</DropdownItem>
+          <DropdownItem>Hunter Murray</DropdownItem>
+        </DropdownMenu>
       </div>
     </div>
   )
