@@ -68,7 +68,7 @@ function MainNavbarMobile() {
             <DropdownMenu style={{ padding: "unset" }}>
               <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsMensActivities" }>Men&#39;s Activities</DropdownItem>
               <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsWomensActivities" }>Women&#39;s Activities</DropdownItem>
-              <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsSeniorActivities" }>Senior Adult Activities</DropdownItem>
+              <DropdownItem className={ styles.textColorLight } tag={ Link } to={ "/eventsSeniorActivities" }>All Church Activities</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
