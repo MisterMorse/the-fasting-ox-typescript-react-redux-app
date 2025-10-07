@@ -18,7 +18,7 @@ export const Counter = (): JSX.Element => {
   const status = useAppSelector(selectStatus)
   const [incrementAmount, setIncrementAmount] = useState("2")
 
-  const incrementValue = 'aaa'
+  const incrementValue = Number(incrementAmount) || 0
 
   return (
     <div>
