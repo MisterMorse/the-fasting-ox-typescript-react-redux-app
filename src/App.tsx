@@ -7,7 +7,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 // import { Quotes } from "./features/quotes/Quotes"
 // import logo from "./logo.svg"
 
-import AboutVision from "./features/aboutVision/AboutVision.tsx"
 import AboutBelieve from "./features/aboutBelieve/AboutBelieve.tsx"
 import AboutVisit from "./features/aboutVisit/AboutVisit.tsx";
 import AboutTimes from "./features/aboutTimes/AboutTimes.tsx"
@@ -31,7 +30,7 @@ export const App = () => (
       </h6>
       <div style={{ padding: "1% 10%" }}>
         <Routes>
-          <Route path="/aboutVision" element=<AboutVision/>/>
+          <Route path="/" element=<AboutTimes/>/>
           <Route path="/aboutBelieve" element=<AboutBelieve/>/>
           <Route path="/aboutVisit" element=<AboutVisit/>/>
           <Route path="/aboutTimes" element=<AboutTimes/>/>
