@@ -1,4 +1,4 @@
-import congregation from '../../assets/images/congregation.jpg'
+import congregation from "../../assets/images/congregation.jpg"
 function AboutBelieve() {
   return (
     <div>

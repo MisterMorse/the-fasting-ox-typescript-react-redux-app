@@ -1,4 +1,4 @@
-import pair from '../../assets/images/pair.jpg'
+import pair from "../../assets/images/pair.jpg"
 
 function AboutVisit() {
   return (
@@ -7,7 +7,7 @@ function AboutVisit() {
         Planning Your Visit
       </h3>
       <div style={{ textAlign: "start" }}>
-        <img src={pair  } style={{ float: "left",  marginRight: "15px", marginBottom:'15px', width: "30%", height: "auto"  }}/>
+        <img src={pair  } style={{ float: "left",  marginRight: "15px", marginBottom:"15px", width: "30%", height: "auto"  }}/>
         We know that meeting someone for the first time can be intimidating, and going to a new church for the first time can be nerve-wracking. We want to help make your first experience at Lovelady Baptist a great one!
         <div style={{ marginTop: "25px"}}>
           <p style={{ fontWeight: "bold" }}>What time is the main service?</p>
