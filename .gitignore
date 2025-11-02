@@ -28,3 +28,4 @@ yalc.lock
 
 # Mine
 .env
+.vite/
