@@ -27,10 +27,10 @@ function MainNavbarMobile() {
         Lovelady Baptist Church
       </NavbarBrand>
       <NavbarToggler onClick={toggle} className={styles.toggler} />
-      <Collapse isOpen={isOpen} navbar style={{marginTop:'15px'}}>
+      <Collapse isOpen={isOpen} navbar style={{marginTop:"15px"}}>
         <Nav navbar vertical>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : '15px' }} nav caret>
+            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : "15px" }} nav caret>
               About
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -65,7 +65,7 @@ function MainNavbarMobile() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : '15px' }} nav caret>
+            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : "15px" }} nav caret>
               Connect
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -93,7 +93,7 @@ function MainNavbarMobile() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : '15px' }} nav caret>
+            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : "15px" }} nav caret>
               Resources
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -107,7 +107,7 @@ function MainNavbarMobile() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : '15px' }} nav caret>
+            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : "15px" }} nav caret>
               Events
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -135,7 +135,7 @@ function MainNavbarMobile() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : '15px' }} nav caret>
+            <DropdownToggle className={styles.textColorLight} style={{ paddingLeft : "15px" }} nav caret>
               Give
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>

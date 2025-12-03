@@ -14,7 +14,7 @@ function AboutTimes() {
         <p style={{ fontWeight: "bold" }}>Wednesday Evening</p>
         <p>6:30 PM - Youth Services</p>
       </div>
-      <img src={bw} style={{marginTop: '20px', width: '100%', height: 'auto'}} alt="" />
+      <img src={bw} style={{marginTop: "20px", width: "100%", height: "auto"}} alt="" />
     </div>
   )
 }
