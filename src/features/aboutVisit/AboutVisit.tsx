@@ -1,15 +1,17 @@
+import global from "../Features.module.css"
+
 import pair from "../../assets/images/pair.jpg"
 
 function AboutVisit() {
   return (
     <div>
-      <h3 style={{ padding: "25px", color: "#E05C42" }}>
+      <h3 className={ global.heading }>
         Planning Your Visit
       </h3>
-      <div style={{ textAlign: "start" }}>
-        <img src={pair  } style={{ float: "left",  marginRight: "15px", marginBottom:"15px", width: "30%", height: "auto"  }}/>
+      <div className={ global.body }>
+        <img src={ pair } style={{ float: "left",  marginRight: "15px", marginBottom:"15px", width: "30%", height: "auto" }}/>
         We know that meeting someone for the first time can be intimidating, and going to a new church for the first time can be nerve-wracking. We want to help make your first experience at Lovelady Baptist a great one!
-        <div style={{ marginTop: "25px"}}>
+        <div style={{ marginTop: "25px" }}>
           <p style={{ fontWeight: "bold" }}>What time is the main service?</p>
           <p>Sunday at 11:00AM</p>
           <p style={{ fontWeight: "bold" }}>How long is a service at Lovelady Baptist?</p>

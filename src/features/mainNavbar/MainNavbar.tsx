@@ -5,7 +5,7 @@ import styles from "./MainNavbar.module.css"
 
 function MainNavbar() {
   return (
-    <Navbar expand={"md"}>
+    <Navbar expand={ "md" }>
       <NavbarBrand className={ styles.textColorLight }>Lovelady Baptist Church</NavbarBrand>
       <Nav navbar>
         <UncontrolledDropdown nav inNavbar>

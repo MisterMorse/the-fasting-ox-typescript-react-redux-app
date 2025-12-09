@@ -1,11 +1,12 @@
+import global from "../Features.module.css"
+
 function ConnectUs() {
   return (
     <div>
-      <h3 style={{ padding: "25px", color: "#E05C42" }}>
+      <h3 className={ global.heading }>
         Contact Us
       </h3>
-      <div style={{display: "flex", flexDirection: "column", padding: "10px", fontWeight: "bold" +
-          ""}}>
+      <div className={ global.body }>
         <p>Email: loveladybaptchurch@gmail.com</p>
         <p>Contact: Pastor Coy Howry (580) 399-6393</p>
       </div>

@@ -1,10 +1,15 @@
+import global from "../Features.module.css"
+
 import bw from "../../assets/images/churchBW.jpg"
+
 function AboutTimes() {
   return (
     <div>
-      <h3 style={{ padding: "25px", color: "#E05C42"  }}>Service Times</h3>
-      20981 County Road, Ada, OK 74821-20981
-      <div style={{ textAlign: "start", marginTop: "20px" }}>
+      <h3 className={ global.heading }>
+        Service Times
+      </h3>
+      <div className={ global.body }>
+        20981 County Road, Ada, OK 74821-20981
         <p style={{ fontWeight: "bold" }}>Sunday Morning</p>
         <p>10:00 AM - Sunday School</p>
         <p>
