@@ -9,7 +9,7 @@ function AboutTimes() {
         Service Times
       </h3>
       <div className={ global.body }>
-        20981 County Road, Ada, OK 74821-20981
+        20981 County Road 1560, Ada, OK 74821-20981
         <p style={{ fontWeight: "bold" }}>Sunday Morning</p>
         <p>10:00 AM - Sunday School</p>
         <p>
