@@ -29,7 +29,7 @@ function MainNavbarMobile() {
       <Collapse isOpen={ isOpen } navbar style={{ marginTop: "15px" }}>
         <Nav navbar vertical>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft : "15px" }} nav caret>
+            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft: "15px" }} nav caret>
               About
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -64,7 +64,7 @@ function MainNavbarMobile() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft : "15px" }} nav caret>
+            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft: "15px" }} nav caret>
               Connect
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -92,7 +92,7 @@ function MainNavbarMobile() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft : "15px" }} nav caret>
+            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft: "15px" }} nav caret>
               Resources
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -106,7 +106,7 @@ function MainNavbarMobile() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft : "15px" }} nav caret>
+            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft: "15px" }} nav caret>
               Events
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
@@ -129,12 +129,12 @@ function MainNavbarMobile() {
                 tag={ Link }
                 to={ "/eventsSeniorActivities" }
               >
-                All Church Activities
+                Senior Activities
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft : "15px" }} nav caret>
+            <DropdownToggle className={ styles.textColorLight } style={{ paddingLeft: "15px" }} nav caret>
               Give
             </DropdownToggle>
             <DropdownMenu style={{ padding: "unset" }}>
