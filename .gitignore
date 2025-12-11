@@ -25,3 +25,7 @@ dist-ssr
 
 .yalc/
 yalc.lock
+
+# Mine
+.env
+.vite/
