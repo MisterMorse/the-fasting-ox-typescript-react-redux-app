@@ -1,5 +1,3 @@
-import react from "@vitejs/plugin-react"
-
 import global from "../Features.module.css"
 import styles from "./AboutLeadership.module.css"
 
