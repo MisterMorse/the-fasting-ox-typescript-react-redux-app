@@ -27,21 +27,20 @@ const EventsAccordion = (category: string): JSX.Element | null => {
   if (isSuccess) {
     return (
       <div>
-        { data.events.map(({ id, name, description, location, date, start_time, end_time, day_of_week }) => (
-          <div key={ id }>
+        {data.events.map(({ id, name, description, location, date, start_time, end_time, day_of_week}) => (
+          <div>
             <h3>
               { name }
             </h3>
             <h5>
-              { day_of_week }, { date }
-              { start_time } - { end_time }<br/>
+              { date }, { start_time } - { end_time }<br/>
               { location }
             </h5>
             <p>
               { description }
             </p>
           </div>
-        )) }
+        ))}
       </div>
     )
   }
