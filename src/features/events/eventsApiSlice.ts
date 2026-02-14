@@ -1,7 +1,5 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
-const apiURL: string = import.meta.env.VITE_API_URL
-
 type Event = {
   id: number
   category: string
@@ -21,11 +19,11 @@ type EventsApiResponse = {
 }
 
 export const eventsApiSlice = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: apiURL }),
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL }),
   reducerPath: "eventsApi",
   tagTypes: ["Events"],
   endpoints: build => ({
-    getEvents: build.query<EventsApiResponse, void>({
+    getEvents: build.query<EventsApiResponse, undefined>({
       query: () => `/events`,
       providesTags: ["Events"]
     }),
