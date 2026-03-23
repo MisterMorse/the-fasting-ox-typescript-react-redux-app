@@ -1,0 +1,26 @@
+nav {
+    background-color: black;
+}
+
+.textColorLight {
+    color: #DDDDDD;
+    background-color: black;
+    text-align: left;
+}
+
+.textColorLight:hover {
+    color: #E05C42;
+}
+
+.textColorLight:focus {
+    color: #E05C42;
+}
+
+.brand {
+    color: #DDDDDD;
+    width: -webkit-fill-available;
+}
+
+.navbar {
+    padding: 1% 20%
+}
