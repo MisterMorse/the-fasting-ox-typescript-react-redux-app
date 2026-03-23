@@ -1,6 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"
 
+import appStyle from "./App.module.css";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 // import { Counter } from "./features/counter/Counter"
@@ -19,16 +21,16 @@ import EventsMensActivities from "./features/events/eventsMensActivities/EventsM
 import EventsWomensActivities from "./features/events/eventsWomensActivities/EventsWomensActivities.tsx"
 import EventsSeniorActivities from "./features/events/eventsSeniorActivities/EventsSeniorActivities.tsx"
 import GiveDonate from "./features/giveDonate/GiveDonate.tsx"
-import HeaderMobile from "./features/headerMobile/HeaderMobile.tsx"
+import HeaderResponsive from "./features/headerResponsive/HeaderResponsive.tsx"
 
 export const App = () => (
   <div className="App">
     <BrowserRouter>
-      <HeaderMobile></HeaderMobile>
+      <HeaderResponsive></HeaderResponsive>
       <h6 style={{ backgroundColor: "#E05C42", color: "#DDDDDD", padding: "12px" }}>
         Reaching out, sharing Christ
       </h6>
-      <div style={{ padding: "1% 10%" }}>
+      <div className={ appStyle.spacing }>
         <Routes>
           <Route path="/" element=<AboutTimes/>/>
           <Route path="/aboutBelieve" element=<AboutBelieve/>/>
