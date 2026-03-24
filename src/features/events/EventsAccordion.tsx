@@ -34,8 +34,8 @@ const EventsAccordion = (category: string): JSX.Element | null => {
                 { name }
               </h3>
               <h5>
-                { day_of_week }, { date }
-                { start_time } - { end_time }
+                { day_of_week }, { date }<br/>
+                { start_time } - { end_time }<br/>
                 { location }
               </h5>
               <p>
