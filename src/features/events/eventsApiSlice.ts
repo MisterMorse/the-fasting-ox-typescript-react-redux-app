@@ -19,7 +19,7 @@ type EventsApiResponse = {
 }
 
 export const eventsApiSlice = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL }),
+  baseQuery: fetchBaseQuery({ baseUrl: "http://the-fasting-ox-alb-736827397.us-east-1.elb.amazonaws.com/" }),
   reducerPath: "eventsApi",
   tagTypes: ["Events"],
   endpoints: build => ({
