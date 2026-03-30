@@ -1,4 +1,5 @@
 import global from "../Features.module.css"
+import PrayersAccordion from "./PrayersAccordion.tsx"
 
 function ConnectRequests() {
   return (
@@ -7,6 +8,7 @@ function ConnectRequests() {
         Prayer Requests
       </h3>
       <div className={ global.body }>
+        { PrayersAccordion() }
       </div>
     </div>
   )
