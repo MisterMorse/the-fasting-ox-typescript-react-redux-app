@@ -24,7 +24,7 @@ export const eventsApiSlice = createApi({
   tagTypes: ["Events"],
   endpoints: build => ({
     getEvents: build.query<EventsApiResponse, undefined>({
-      query: () => `/events`,
+      query: () => `/events/`,
       providesTags: ["Events"]
     }),
     getEventsByCategory: build.query<EventsApiResponse, string>({
