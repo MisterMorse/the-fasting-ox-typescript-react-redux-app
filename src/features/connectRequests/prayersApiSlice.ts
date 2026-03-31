@@ -19,7 +19,7 @@ export const prayersApiSlice = createApi({
   tagTypes: ["Prayers"],
   endpoints: build => ({
     getPrayers: build.query<PrayersApiResponse, undefined>({
-      query: () => `/prayers`,
+      query: () => `/prayers/`,
       providesTags: ["Prayers"]
     })
   }),
