@@ -14,12 +14,12 @@ type PrayersApiResponse = {
 }
 
 export const prayersApiSlice = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: "http://the-fasting-ox-alb-736827397.us-east-1.elb.amazonaws.com/" }),
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL as string }),
   reducerPath: "prayersApi",
   tagTypes: ["Prayers"],
   endpoints: build => ({
     getPrayers: build.query<PrayersApiResponse, undefined>({
-      query: () => `/prayers/`,
+      query: () => `/api/v1/prayers/`,
       providesTags: ["Prayers"]
     })
   }),
