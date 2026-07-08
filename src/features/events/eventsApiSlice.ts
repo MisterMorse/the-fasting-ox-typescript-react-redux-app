@@ -19,16 +19,16 @@ type EventsApiResponse = {
 }
 
 export const eventsApiSlice = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL as string }),
+  baseQuery: fetchBaseQuery({ baseUrl: "/api/v1" }),
   reducerPath: "eventsApi",
   tagTypes: ["Events"],
   endpoints: build => ({
     getEvents: build.query<EventsApiResponse, undefined>({
-      query: () => `/api/v1/events/`,
+      query: () => `/events/`,
       providesTags: ["Events"]
     }),
     getEventsByCategory: build.query<EventsApiResponse, string>({
-      query: (category) => `/api/v1/events/${category}/`,
+      query: (category) => `/events/${category}/`,
       providesTags: ["Events"]
     })
   }),

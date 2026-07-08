@@ -14,12 +14,12 @@ type PrayersApiResponse = {
 }
 
 export const prayersApiSlice = createApi({
-  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL as string }),
+  baseQuery: fetchBaseQuery({ baseUrl: "/api/v1" }),
   reducerPath: "prayersApi",
   tagTypes: ["Prayers"],
   endpoints: build => ({
     getPrayers: build.query<PrayersApiResponse, undefined>({
-      query: () => `/api/v1/prayers/`,
+      query: () => `/prayers/`,
       providesTags: ["Prayers"]
     })
   }),
