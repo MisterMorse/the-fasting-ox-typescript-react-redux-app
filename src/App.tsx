@@ -22,6 +22,7 @@ import EventsWomensActivities from "./features/events/eventsWomensActivities/Eve
 import EventsSeniorActivities from "./features/events/eventsSeniorActivities/EventsSeniorActivities.tsx"
 import GiveDonate from "./features/giveDonate/GiveDonate.tsx"
 import HeaderResponsive from "./features/headerResponsive/HeaderResponsive.tsx"
+import FooterResponsive from "./features/footerResponsive/FooterResponsive.tsx"
 
 export const App = () => (
   <div className="App">
@@ -47,6 +48,7 @@ export const App = () => (
           <Route path="/giveDonate" element=<GiveDonate/>/>
         </Routes>
       </div>
+      <FooterResponsive></FooterResponsive>
     </BrowserRouter>
   </div>
 )
