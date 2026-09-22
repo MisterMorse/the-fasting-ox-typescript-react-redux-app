@@ -42,7 +42,10 @@ const eslintConfig = config(
       ecmaVersion: 2020,
       globals: globals.browser,
       parserOptions: {
-        projectService: true,
+        // projectService: true,
+        projectService: {
+          defaultProject: "tsconfig.json", // Fall back to this for extra files
+        },
         tsconfigRootDir: import.meta.dirname,
       },
     },

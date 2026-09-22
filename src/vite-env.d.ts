@@ -8,5 +8,5 @@ type ImportMetaEnv = {
 }
 
 type ImportMeta = {
-  readonly env: ImportMetaEnv;
+  readonly env: ImportMetaEnv
 }
