@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
-type Event = {
+export type Event = {
   id: number
   category: string
   name: string
@@ -25,12 +25,12 @@ export const eventsApiSlice = createApi({
   endpoints: build => ({
     getEvents: build.query<EventsApiResponse, undefined>({
       query: () => `/events/`,
-      providesTags: ["Events"]
+      providesTags: ["Events"],
     }),
     getEventsByCategory: build.query<EventsApiResponse, string>({
-      query: (category) => `/events/${category}/`,
-      providesTags: ["Events"]
-    })
+      query: category => `/events/${category}/`,
+      providesTags: ["Events"],
+    }),
   }),
 })
 

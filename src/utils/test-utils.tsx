@@ -1,10 +1,13 @@
+import { render, renderHook } from "@testing-library/react"
 import type { RenderOptions } from "@testing-library/react"
-import { render } from "@testing-library/react"
 import userEvent from "@testing-library/user-event"
-import type { PropsWithChildren, ReactElement } from "react"
+import { configureStore } from "@reduxjs/toolkit"
+import type { PropsWithChildren, ReactElement, ReactNode } from "react"
 import { Provider } from "react-redux"
+
 import type { AppStore, RootState } from "../app/store"
 import { makeStore } from "../app/store"
+import { eventsApiSlice } from "../features/events/eventsApiSlice.ts"
 
 /**
  * This type extends the default options for
@@ -61,5 +64,41 @@ export const renderWithProviders = (
     store,
     user: userEvent.setup(),
     ...render(ui, { wrapper: Wrapper, ...renderOptions }),
+  }
+}
+
+// I am generating these methods with a static list of reducers as I build the rest of
+// the infrastructure for hook testing; I have some approaches to isolate each
+// reducer by sending an option object with the reducer under testing so that it doesn't
+// interfere with other reducers or generate overhead as the application expands,
+// but there are a lot of moving pieces and I will implement a purely dynamic solution
+// after the basic machinery is in place.
+export const setupTestStore = () => {
+  return configureStore({
+    reducer: {
+      [eventsApiSlice.reducerPath]: eventsApiSlice.reducer,
+    },
+    middleware: getDefaultMiddleware =>
+      getDefaultMiddleware().concat(eventsApiSlice.middleware),
+  })
+}
+
+// Extract types from the store setup
+export type TestStore = ReturnType<typeof setupTestStore>
+export type TestRootState = ReturnType<TestStore["getState"]>
+
+// A custom hook-renderer that injects the store
+export function renderHookWithProvider<Result, Props>(
+  renderCallback: (props: Props) => Result,
+) {
+  const store = setupTestStore()
+
+  const Wrapper = ({ children }: { children: ReactNode }) => (
+    <Provider store={ store }>{ children }</Provider>
+  )
+
+  return {
+    store,
+    ...renderHook(renderCallback, { wrapper: Wrapper }),
   }
 }
