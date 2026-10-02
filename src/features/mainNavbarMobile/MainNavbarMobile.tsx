@@ -8,8 +8,8 @@ import {
   Navbar,
   NavbarBrand,
   NavbarToggler,
-  UncontrolledDropdown
-} from "reactstrap"
+  UncontrolledDropdown,
+} from "@neolution-ch/reactstrap"
 import { Link } from "react-router-dom";
 
 import styles from "./MainNavbarMobile.module.css"

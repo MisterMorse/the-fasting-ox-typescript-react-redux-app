@@ -6,7 +6,7 @@ import {
   Navbar,
   NavbarBrand,
   UncontrolledDropdown,
-} from "reactstrap"
+} from "@neolution-ch/reactstrap"
 import { Link } from "react-router-dom"
 
 import styles from "./MainNavbarDesktop.module.css"
