@@ -5,8 +5,6 @@ import appStyle from "./App.module.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
-// import { Counter } from "./features/counter/Counter"
-// import { Quotes } from "./features/quotes/Quotes"
 // import logo from "./logo.svg"
 
 import AboutBelieve from "./features/aboutBelieve/AboutBelieve.tsx"

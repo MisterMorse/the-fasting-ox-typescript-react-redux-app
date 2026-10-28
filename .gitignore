@@ -29,3 +29,4 @@ yalc.lock
 # Mine
 *.env
 .vite/
+/coverage
