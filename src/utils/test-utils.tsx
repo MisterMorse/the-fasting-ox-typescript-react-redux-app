@@ -8,6 +8,8 @@ import { Provider } from "react-redux"
 import type { AppStore, RootState } from "../app/store"
 import { makeStore } from "../app/store"
 import { eventsApiSlice } from "../features/events/eventsApiSlice.ts"
+import { prayersApiSlice } from "../features/connectRequests/prayersApiSlice.ts"
+import { journeysApiSlice } from "../features/resourcesJourney/journeysApiSlice.ts"
 
 /**
  * This type extends the default options for
@@ -77,9 +79,11 @@ export const setupTestStore = () => {
   return configureStore({
     reducer: {
       [eventsApiSlice.reducerPath]: eventsApiSlice.reducer,
+      [prayersApiSlice.reducerPath]: prayersApiSlice.reducer,
+      [journeysApiSlice.reducerPath]: journeysApiSlice.reducer,
     },
     middleware: getDefaultMiddleware =>
-      getDefaultMiddleware().concat(eventsApiSlice.middleware),
+      getDefaultMiddleware().concat(eventsApiSlice.middleware, prayersApiSlice.middleware, journeysApiSlice.middleware),
   })
 }
 

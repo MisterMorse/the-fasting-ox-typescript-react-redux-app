@@ -12,7 +12,7 @@ type Journey = {
   updated_at: string
 }
 
-type JourneysApiResponse = {
+export type JourneysApiResponse = {
   journeys: Journey[]
 }
 

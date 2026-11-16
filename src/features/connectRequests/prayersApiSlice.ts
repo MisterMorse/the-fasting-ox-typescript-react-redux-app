@@ -9,7 +9,7 @@ type Prayer = {
   updated_at: string
 }
 
-type PrayersApiResponse = {
+export type PrayersApiResponse = {
   prayers: Prayer[]
 }
 

@@ -14,7 +14,7 @@ export type Event = {
   updated_at: string
 }
 
-type EventsApiResponse = {
+export type EventsApiResponse = {
   events: Event[]
 }
 
