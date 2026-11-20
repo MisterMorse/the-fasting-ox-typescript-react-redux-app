@@ -2,6 +2,7 @@ import type { FetchBaseQueryError } from "@reduxjs/toolkit/query"
 import { waitFor } from "@testing-library/react"
 import { http, HttpResponse } from "msw"
 
+import type { EventsApiResponse } from "./eventsApiSlice"
 import {
   eventsApiSlice,
   useGetEventsQuery,
@@ -35,7 +36,7 @@ describe("eventsApiSlice -> endpoints", () => {
 describe("eventsApiSlice -> happy -> useGetEventsQuery", () => {
   it("resolves events correctly", async () => {
     server.use(
-      http.get("/api/v1/events/", () => {
+      http.get<never, never, EventsApiResponse>("/api/v1/events/", () => {
         return HttpResponse.json({ events: [customizedEvents] })
       })
     )
@@ -55,7 +56,7 @@ describe("eventsApiSlice -> happy -> useGetEventsQuery", () => {
 describe("eventsApiSlice -> unhappy -> useGetEventsQuery", () => {
   it("should properly process a 500 server error", async () => {
     server.use(
-      http.get("/api/v1/events/", () => {
+      http.get<never, never, EventsApiResponse>("/api/v1/events/", () => {
         return new HttpResponse(null, { status: 500 })
       })
     )
@@ -77,7 +78,7 @@ describe("eventsApiSlice -> happy -> useGetEventsByCategoryQuery", () => {
   it("resolves events correctly", async () => {
     const matchingEvent = createEventMock({ category: "Apologetics" })
     server.use(
-      http.get("/api/v1/events/Apologetics/", () => {
+      http.get<never, never, EventsApiResponse>("/api/v1/events/Apologetics/", () => {
         return HttpResponse.json({ events: [matchingEvent] })
       })
     )
@@ -95,7 +96,7 @@ describe("eventsApiSlice -> happy -> useGetEventsByCategoryQuery", () => {
 
   it("resolves empty results array correctly", async () => {
     server.use(
-      http.get("/api/v1/events/Apologetics/", () => {
+      http.get<never, never, EventsApiResponse>("/api/v1/events/Apologetics/", () => {
         return HttpResponse.json({ events: [] })
       })
     )
@@ -115,7 +116,7 @@ describe("eventsApiSlice -> happy -> useGetEventsByCategoryQuery", () => {
 describe("eventsApiSlice -> unhappy -> useGetEventsByCategory", () => {
   it("should properly process a 500 server error", async () => {
     server.use(
-      http.get("/api/v1/events/Apologetics/", () => {
+      http.get<never, never, EventsApiResponse>("/api/v1/events/Apologetics/", () => {
         return new HttpResponse(null, { status: 500 })
       })
     )
