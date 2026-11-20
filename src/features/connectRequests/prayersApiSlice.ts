@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
-type Prayer = {
+export type Prayer = {
   id: number
   category: string
   name: string

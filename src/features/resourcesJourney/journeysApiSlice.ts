@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 
-type Journey = {
+export type Journey = {
   id: number
   date: string
   title: string
